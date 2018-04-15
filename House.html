@@ -1,0 +1,65 @@
+<!doctype html>
+ <html>
+  <head>
+   <!--this is a comment--> 
+   <title>Eddy Sketech</title>
+     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+   <style>
+    
+       body{
+           background-color:crimson;
+       }
+       h1{
+           text-align: center;
+            color:Amumu;
+           font-size:40px
+         }
+       p{
+           font-family:fantasy;
+           font-size:25px;
+           color:azure;
+       }
+   </style>
+   </head>
+  <body>
+  <h1>House</h1>
+      
+  <p> Narrator: You walk into the house. Right when you step foot in side you fall to one knee. You have been out in the sun for too long you are starting to pass out of dehydration. You look up to see a pot of water. </p>
+      <button onclick="mySunction()"> Drink the pot of water</button>
+
+<p id="demo"></p>
+
+<script>
+function mySunction() {
+    document.getElementById("demo").innerHTML = "You get up and walk out of the house";
+}
+</script>
+      
+<button onclick="mylunction()">No it's not my water</button>
+
+<p id="demo"></p>
+
+<script>
+function mylunction() {
+    document.getElementById("demo").innerHTML = "Roll a 3 or higher to get up.";
+}
+</script>
+
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,10)">If you didn't drink the water</button>
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+</script>
+     <ul>
+  <li><a href="Empirer.html">Walk to the ruined Empirer</a></li>
+</ul>
+        
+        <ul>
+  <li><a href="index.html">Restart journey</a></li>
+</ul> 
+  </body>
+ </html>
